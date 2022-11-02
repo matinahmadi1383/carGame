@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ماشین بازی</title>
+	<link rel="icon" type="text/css" href="./themes/default/images/icon.jpg">
+
+	<link rel="stylesheet" type="text/css" href="./themes/default/css/bootstrap.rtl.min.css">
+	<link rel="stylesheet" type="text/css" href="./themes/default/css/bootstrap-icons.css">
+
+	<script src="./themes/default/js/jquery.min.js"></script>
+	<script src="./themes/default/js/bootstrap.min.js"></script>
+	
+	<script src="./themes/default/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="./themes/default/css/style.css">
+</html>
+<body>
+	<div id="show_speed">
+		<div id="arrow"></div>
+		<span></span>
+		<div id="overflow_fill_nitro">
+			<div id="fill_nitro"></div>
+		</div>
+		<p id="txt_help_nitro">space</p>
+		<div id="nitro"></div>
+	</div>
+	<div id="mony">
+		<div id="dolor"><div>0</div><i class="bi bi-currency-dollar"></i></div>
+		<div id="coin" data-bs-toggle="modal" data-bs-target="#exampleModal3"><div>0</div><i class="bi bi-coin"></i></div>
+		<div id="gem"><div>0</div><i class="bi bi-gem"></i></div>
+	</div>
+	<main id="start_menu">
+		<div class='container'>
+		  <button class='one' id="btn_play"><b>شروع</b></button>
+		  <button class='two' id="btn_shop" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>فروشگاه</b></button>
+		  <button class='three' id="btn_cars" data-bs-toggle="modal" data-bs-target="#exampleModal2"><b>ماشین های من</b></a></button>
+		  <button class='four' id="btn_about" data-bs-toggle="modal" data-bs-target="#exampleModal4"><b>درباره ی ما</b></button>
+		  <button class='five' id="btn_setting" data-bs-toggle="modal" data-bs-target="#exampleModal5"><b>تنظیمات</b></button>
+		</div>
+	</main>
+	<main id="game">
+		<div id="Guardrails1" class="guard"></div>
+		<div id="Guardrails2" class="guard"></div>
+		<div id="my_car"></div>
+		<div id="road"></div>
+		<div id="opaque">
+			<div id="gameOver">
+				<p>***شما باختید***</p>
+				<div class="show_scors">امتیاز:</div>
+				<div class="show_scors" id="show_score">0</div>
+				<div class="show_scors" style="margin-right: 50px;">میانگین سرعت:</div>
+				<div class="show_scors" id="show_Average">0</div><br>
+				<div class="show_scors" style="font-size: 1.8rem;margin-right: 70px;">امتیاز نهایی:</div>
+				<div class="show_scors" id="show_sum" style="font-size: 1.8rem;color: green;">0</div>
+				<button class="btn_tryAgain" role="button">
+					<span class="text">تلاش دوباره</span>
+				</button>
+				<button class="btn_goToStartMenu" role="button">
+					<span class="text">رفتن به صفحه ی اصلی</span>
+				</button>
+			</div>
+		</div>
+		<!-- <div id="mobileBTN1"></div>
+		<div id="mobileBTN2"></div>
+		<div id="mobileBTN3"></div>
+		<div id="mobileBTN4"></div> -->
+	</main>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<!-- <div id="shop_mony"> -->
+	      	<!-- </div> -->
+        	<main id="shop">
+
+        	</main>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal 2 -->
+	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<!-- <div id="shop_mony"> -->
+	      	<!-- </div> -->
+        	<main id="my_cars">
+        		
+        	</main>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal 3 -->
+	<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<!-- <div id="shop_mony"> -->
+	      	<!-- </div> -->
+        	<main id="coin_convert">
+        		<div></div>
+        		<button class="btn_conver">
+        			<span>تبدیل</span>
+        		</button>
+        	</main>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal 4 -->
+	<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<!-- <div id="shop_mony"> -->
+	      	<!-- </div> -->
+        	<main id="coin_convert">
+
+        	</main>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal 5 -->
+	<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<!-- <div id="shop_mony"> -->
+	      	<!-- </div> -->
+        	<main id="coin_convert">
+        	</main>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
